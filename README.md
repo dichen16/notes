@@ -15,6 +15,9 @@ I'm a temporarily bad engineer.
 3. Due to my bad CS background, I also implement some basic algorithm.
 
 ```
-There are dreamers and there are realists in this world. You'd think the dreamers would find the dreamers, and the realists would find the realists, but more often than not, the opposite is true. See, the dreamers need the realists to keep them from soaring too close to the sun. And the realists? Well, without the dreamers, they might not ever get off the ground.
+There are dreamers and there are realists in this world. 
+You'd think the dreamers would find the dreamers, and the realists would find the realists, but more often than not, the opposite is true.
+See, the dreamers need the realists to keep them from soaring too close to the sun. 
+And the realists? Well, without the dreamers, they might not ever get off the ground.
 ```
 
