@@ -1,0 +1,44 @@
+
+
+# Kubernetes Troubleshooting
+
+---
+
+# Taints and Tolerations
+
+## Update the taints on one or more nodes
+
+taint consists of a key, value, and effect. As an argument here, it is expressed as key=value:effect.
+
+```bash
+# Update node 'foo' with a taint with key 'dedicated' and value 'special-user' and effect 'NoSchedule'.
+# If a taint with that key and effect already exists, its value is replaced as specified.
+$ kubectl taint nodes foo dedicated=special-user:NoSchedule
+
+# Remove from node 'foo' the taint with key 'dedicated' and effect 'NoSchedule' if one exists.
+$ kubectl taint nodes foo dedicated:NoSchedule-
+
+# Remove from node 'foo' all the taints with key 'dedicated'
+$ kubectl taint nodes foo dedicated-
+
+# Add a taint with key 'dedicated' on nodes having label mylabel=X
+$ kubectl taint node -l myLabel=X  dedicated=foo:PreferNoSchedule
+
+$ kubectl taint -h # for more infomation let's see the manual
+```
+
+# Assigning Pods to Nodes
+
+## nodeSelector
+
+```bash
+Step One: Attach label to the node
+$ kubectl label nodes <node-name> <label-key>=<label-value>
+Step Two: Add a nodeSelector field to your pod configuration
+$ 
+```
+
+
+
+
+
